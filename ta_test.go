@@ -44,7 +44,7 @@ func ExampleSpellModel_AddEntry() {
 	fmt.Printf("Output for word 'example' is: %v\n",
 		entry.Frequency)
 	// Output:
-	// Output for word 'example' is: 100
+	// Output for word 'example' is: 110
 }
 
 func ExampleSpellModel_Lookup() {

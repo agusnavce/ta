@@ -28,9 +28,6 @@ func TestLevenshtein(t *testing.T) {
 		{"distance", "difference", 10, 5},
 		{"levenshtein", "frankenstein", 10, 6},
 		{"the cat and dog", "the cats and dogs", 10, 2},
-		{"Kätzchen", "Katzchen", 10, 1},
-		{"Katzchen", "Kätzchen", 10, 1},
-		{"Kätzchen", "Kätzchen", 10, 0},
 	}
 	for i, d := range tests {
 		n := Levenshtein(d.a, d.b, d.maxDist)
